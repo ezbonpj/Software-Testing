@@ -151,17 +151,11 @@ Given('User is on login page', async ({page}) => {
 
 When('User enters <username> and enter <password>', async ({page}, dataTable:DataTable) => {
   // Step: When User enters <username> and enter <password>
-  
   { 
     const userLogin  = dataTable.hashes(); 
-
-
     await page.locator("#user-name").fill(userLogin[0].username);
     await page.locator('#password').fill(userLogin[0].password);
-
-
   }
-
 });
 
 When('User clicks on login button', async ({page}) => {

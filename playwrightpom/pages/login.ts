@@ -13,11 +13,11 @@ export class LoginPOM {
         this.passwordInput = page.locator("#password");
         this.loginButton = page.getByText("Login");
         this.pageLogo = page.locator(".login_logo").textContent();
-    } 
+    }  
 
     async performLoginAction(uname: string,pass: string){
         await this.usernameInput.fill(uname);
         await this.passwordInput.fill(pass);
         await this.loginButton.click(); 
-    }
-}
+    } 
+}  

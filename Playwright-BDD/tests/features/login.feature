@@ -81,7 +81,8 @@
 
 
 #ith ver type using scenario outline 
- Feature: Login Functionality
+ Feature: Login Functionality 
+ 
     
     Scenario Outline: Login with valid credentials
     Given User is on login page 
